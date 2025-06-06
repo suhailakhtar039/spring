@@ -8,9 +8,8 @@
 <!--    <bean id="alien" class="org.example.Alien" scope="prototype"></bean>-->
 
     <bean id="alien" class="org.example.Alien">
-        <property name="age" value="21"></property>
-
-        <property name="lap" ref="lap"></property>
+        <constructor-arg value="21" />
+        <property name="lap" ref="lap"/>
     </bean>
 
     <bean id="lap" class="org.example.Laptop">
