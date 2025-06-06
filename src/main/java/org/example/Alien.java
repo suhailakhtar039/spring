@@ -8,6 +8,11 @@ public class Alien {
         System.out.println("Object Created");
     }
 
+    public Alien(int age, Laptop lap) {
+        this.age = age;
+        this.lap = lap;
+    }
+
     public Alien(int age) {
         System.out.println("Para constructor called");
         this.age = age;

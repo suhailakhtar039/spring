@@ -9,6 +9,7 @@
 
     <bean id="alien" class="org.example.Alien">
         <constructor-arg value="21" />
+        <constructor-arg ref="lap"/>
         <property name="lap" ref="lap"/>
     </bean>
 
