@@ -5,7 +5,15 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    <bean id="alien" class="org.example.Alien" scope="prototype"></bean>-->
+
     <bean id="alien" class="org.example.Alien">
+        <property name="age" value="21"></property>
+
+        <property name="lap" ref="lap"></property>
+    </bean>
+
+    <bean id="lap" class="org.example.Laptop">
     </bean>
 
 </beans>
